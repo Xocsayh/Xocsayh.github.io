@@ -140,7 +140,80 @@ footer {
     color: #aaa;
     background: black;
 }
+@media (max-width: 768px) {
+    nav {
+        gap: 12px;
+        padding: 12px 10px;
+        flex-wrap: wrap;
+    }
 
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 110px 20px 40px;
+        height: auto;
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .box {
+        max-width: 100%;
+        width: 100%;
+        padding: 22px;
+        border-radius: 16px;
+    }
+
+    .box h1 {
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    section {
+        padding: 65px 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #iletisim p,
+    #hakkimda p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 20px;
+    }
+}
 </style>
 </head>
 
