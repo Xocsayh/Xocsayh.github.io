@@ -535,6 +535,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
@@ -617,6 +618,133 @@
         </div>
     </section>
 
+    <section id="projects" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p style="margin-bottom:6px;">
+                A selection of things I have built and shipped end to end — from open-source security tooling to a live, paid web platform. Click a card to expand.
+            </p>
+            <div class="cards-grid">
+
+                <div class="card expand-card" onclick="toggleProject(this)">
+                    <div class="expand-head">
+                        <div>
+                            <h3>Web Site Tester</h3>
+                            <p>Open-source passive web security scanner (Python CLI) that produces a detailed risk report.</p>
+                        </div>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>What It Does</h4>
+                        <p>A Python-based CLI tool for passive website security analysis — no active attacks. It reviews visible security configuration and scores the overall posture.</p>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Checks missing/weak security headers and HTTPS usage</li>
+                            <li>Cookie flags: Secure, HttpOnly, SameSite</li>
+                            <li>robots.txt / sitemap.xml / security.txt exposure</li>
+                            <li>v1.05: redesigned risk scoring, fewer false positives on large platforms</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span class="project-badge">Python</span>
+                            <span class="project-badge">CLI Tool</span>
+                            <span class="project-badge">Kali Linux</span>
+                            <span class="project-badge">v1.05</span>
+                        </div>
+                        <div class="button-group" style="margin-top:8px;">
+                            <a href="https://github.com/Xocsayh/web-site-tester" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card expand-card" onclick="toggleProject(this)">
+                    <div class="expand-head">
+                        <div>
+                            <h3>OddsEdge <span style="color:#7CFC9A; font-size:13px;">● Live</span></h3>
+                            <p>A live, subscription-based football analytics platform running on my own Linux server.</p>
+                        </div>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>What It Does</h4>
+                        <p>A full-stack web platform that compares bookmaker odds against a sharp-market fair price to surface "value" picks, validated with historical backtesting.</p>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>FastAPI back end with Stripe subscription payments</li>
+                            <li>Multi-language UI (EN / TR / PL / PT) and a Telegram bot for automated pick delivery</li>
+                            <li>Deployed &amp; hardened on a Hetzner Linux VPS (systemd, HTTPS, security headers, rate limiting)</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span class="project-badge">Python</span>
+                            <span class="project-badge">FastAPI</span>
+                            <span class="project-badge">Stripe</span>
+                            <span class="project-badge">Telegram Bot</span>
+                            <span class="project-badge">Linux VPS</span>
+                        </div>
+                        <div class="button-group" style="margin-top:8px;">
+                            <a href="https://oddsedgepicks.com" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card expand-card" onclick="toggleProject(this)">
+                    <div class="expand-head">
+                        <div>
+                            <h3>Turkish Pentest Wordlists</h3>
+                            <p>An open-source, Turkish-focused wordlist collection for web security testing (~315K entries).</p>
+                        </div>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Why I Built It</h4>
+                        <p>Almost every public wordlist (SecLists, etc.) is English-only. Turkish systems use terms like <em>yonetim, yukle, bayi, fatura</em> that those lists miss — a real blind spot. So I built and open-sourced a Turkish-focused set.</p>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>~315,000 entries: directories, files, subdomains, parameters</li>
+                            <li>Sensitive-file patterns (.env, config.php.bak, yedek.sql)</li>
+                            <li>Includes a Python generator to grow the lists</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span class="project-badge">Python</span>
+                            <span class="project-badge">Wordlist</span>
+                            <span class="project-badge">Fuzzing</span>
+                            <span class="project-badge">MIT License</span>
+                        </div>
+                        <div class="button-group" style="margin-top:8px;">
+                            <a href="https://github.com/Xocsayh/admin-panel-wordlist-tr-en" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card expand-card" onclick="toggleProject(this)">
+                    <div class="expand-head">
+                        <div>
+                            <h3>FoodShare <span style="color:#aaa; font-size:13px;">University project</span></h3>
+                            <p>A .NET MVC web application for sharing surplus food and reducing food waste.</p>
+                        </div>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>What It Does</h4>
+                        <p>An MVC web app with user accounts, food listings and a relational database, built as a full university project with complete technical documentation.</p>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>ASP.NET Core 8 MVC with Entity Framework and SQLite</li>
+                            <li>User accounts, listings and relational data model</li>
+                            <li>UML diagrams and full technical documentation</li>
+                        </ul>
+                        <div class="project-badges">
+                            <span class="project-badge">C#</span>
+                            <span class="project-badge">ASP.NET Core 8</span>
+                            <span class="project-badge">Entity Framework</span>
+                            <span class="project-badge">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="skills" class="reveal">
         <div class="container">
             <h2 class="section-title">Skills</h2>
@@ -638,49 +766,11 @@
         <div class="container">
             <h2 class="section-title">Services</h2>
             <div class="cards-grid">
-                <div class="card expand-card" onclick="toggleProject(this)">
-                    <div class="expand-head">
-                        <div>
-                            <h3>Website Security Testing</h3>
-                            <p>
-                                Reviewing websites for common weaknesses and helping identify potential risks that may affect security, privacy or overall stability.
-                            </p>
-                        </div>
-                        <span class="expand-icon">+</span>
-                    </div>
-
-                    <div class="project-details">
-                        <h4>Featured Tool: Web Site Tester v1.05</h4>
-                        <p>
-                            I developed <strong>Web Site Tester</strong>, a Python-based CLI tool focused on passive website security analysis. It is designed to quickly review visible security configurations such as HTTP security headers, cookie flags, HTTPS usage and common hardening gaps.
-                        </p>
-
-                        <h4>Why I Built It</h4>
-                        <p>
-                            Instead of checking the same basic points manually one by one every time, I wanted a faster way to reach a useful result with less effort. This tool helps me analyze visible indicators in a more practical and organized way, making the review process more efficient while still keeping the analysis passive and educational.
-                        </p>
-
-                        <h4>What It Helps Detect</h4>
-                        <ul>
-                            <li>Missing or weak security headers</li>
-                            <li>Cookie configuration issues such as Secure, HttpOnly and SameSite flags</li>
-                            <li>HTTPS and visible hardening weaknesses</li>
-                            <li>Common configuration gaps that may affect web security posture</li>
-                            <li>More realistic scoring with reduced false positives for large platforms</li>
-                        </ul>
-
-                        <div class="project-badges">
-                            <span class="project-badge">Python</span>
-                            <span class="project-badge">CLI Tool</span>
-                            <span class="project-badge">Passive Analysis</span>
-                            <span class="project-badge">Web Security</span>
-                            <span class="project-badge">v1.05</span>
-                        </div>
-
-                        <div class="button-group" style="margin-top: 8px;">
-                            <a href="https://github.com/Xocsayh/web-site-tester" target="_blank" class="btn btn-primary" onclick="event.stopPropagation()">View on GitHub</a>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3>Website Security Testing</h3>
+                    <p>
+                        Reviewing websites for common weaknesses and helping identify potential risks that may affect security, privacy or overall stability — using tools like my own Web Site Tester (see Projects).
+                    </p>
                 </div>
 
                 <div class="card">
